@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    color: rgb(131,131,131);
+    border-bottom: 1px solid #e8e8e8;
+}
+h4 {
+    color: rgb(106,106,106);
+}
+
+h5 {
+    text-align: center;
+    font-size: 1rem;
+    padding: 30px;
+    color: rgb(106,106,106);
+}
+
+.completa {
+    text-decoration: line-through;
+    color: rgb(30, 139, 255);
+}
+
+/* DATOS */
+.datos {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.datos p {
+    background-color: #e8e8e8;
+    color: rgb(131,131,131);
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+
+/* CONTENEDOR */
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+}
+
+.contenedor .formulario {
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #aad6f4;
+    color: #fff;
+    max-height: 110px;
+    border-radius: 0.5rem;
+}
+
+.contenedor .formulario input[type="text"] {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: rgb(131,131,131);
+}
+
+.contenedor .formulario input[type="text"]:focus {
+    outline: none;
+    border: 1px solid rgb(131,131,131);
+    color: rgb(131,131,131);
+}
+
+.contenedor .formulario input[type="submit"] {
+    border: none;
+    padding: 10px;
+    background-color: #2999e4;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+}
+
+
+
+
+/* TAREAS */
+.contenedor .tareas {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(215, 236, 250);
+    border-radius: 0.5rem;
+}
+
+.contenedor .item-tarea {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 10px;
+    margin: 10px 2px;
+}
+.contenedor .item-tarea p {
+    color: rgb(131,131,131);
+}
+
+.eliminar {
+    border: none;
+    background-color: #e4293c;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform ease 300ms;
+    padding: 8px;
+}
+
+.eliminar:hover {
+    transform: scale(1.3);
+}
+
+.completada {
+    border: none;
+    background-color: #2999e4;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform ease 300ms;
+    padding: 8px;
+}
+
+.completada:hover {
+    transform: scale(1.3);
+}
+
+
+@media (max-width: 600px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 15px;
+    }
+}
